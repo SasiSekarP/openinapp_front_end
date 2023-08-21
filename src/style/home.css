@@ -38,6 +38,10 @@
     padding-top: 20px;
 }
 
+.homepageleftboxlink:hover{
+    font-weight: 700;
+}
+
 .homepageleftcontactuscontainer{
     flex: 1;
     display: flex;
@@ -115,6 +119,89 @@
     display: none;
 }
 
+.homepagefourcardcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0px;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.homepagefourcard{
+    min-width: 250px;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    flex: 1;
+}
+
+.aliceblue{
+    background-color: rgb(211, 218, 224);
+}
+
+.antiquewhite{
+    background-color: rgb(236, 224, 209);
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.gray{
+    background-color: rgb(194, 190, 190);
+}
+
+.homepagefourcontainericontag{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+.homepagefourcardparatag{
+    font-weight: 600;
+}
+
+.homepagegrapharea{
+    background-color: white;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 400px;
+}
+
+.homepagepichartrow{
+    padding-top: 2rem;
+}
+
+.homepagepichartrow{
+    width: 100%;
+    display: flex;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.piechartcontainer{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 200px;
+    min-width: 200px;
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width:560px) {
+    .homepagefourcard{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 375px) {
 
     .smallscreenheading{
@@ -186,6 +273,10 @@
     .homepageleftcontainer{
         margin: 0px;
         border-radius: 0px;
+    }
+
+    .homepagerighcontainer{
+        margin-right: 15px;
     }
 }
 

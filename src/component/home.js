@@ -1,5 +1,11 @@
 import { BiSearch, BiMenu, BiBell } from "react-icons/bi";
-import { AiOutlineDoubleLeft } from "react-icons/ai";
+import {
+  AiOutlineDoubleLeft,
+  AiOutlineTags,
+  AiOutlineLike,
+} from "react-icons/ai";
+import { PiUsers } from "react-icons/pi";
+import { CiMoneyBill } from "react-icons/ci";
 
 import Leftcontainer from "./homepageleftbox";
 import { useState } from "react";
@@ -83,6 +89,47 @@ export default function Home() {
               <BiSearch />
             </button>
           </div>
+        </div>
+        <div className="homepagefourcardcontainer">
+          <div className="homepagefourcard aliceblue">
+            <div className="homepagefourcontainericontag">
+              <CiMoneyBill />
+            </div>
+
+            <p className="homepagefourcardparatag">Total Revenues</p>
+            <h2>$2,129,430</h2>
+          </div>
+          <div className="homepagefourcard antiquewhite">
+            <div className="homepagefourcontainericontag">
+              <AiOutlineTags />
+            </div>
+
+            <p className="homepagefourcardparatag">Total Transactions</p>
+            <h2>1,520</h2>
+          </div>
+          <div className="homepagefourcard gray">
+            <div className="homepagefourcontainericontag">
+              <AiOutlineLike />
+            </div>
+
+            <p className="homepagefourcardparatag">Total Likes</p>
+            <h2>9,721</h2>
+          </div>
+          <div className="homepagefourcard aqua">
+            <div className="homepagefourcontainericontag">
+              <PiUsers />
+            </div>
+
+            <p className="homepagefourcardparatag">Total Users</p>
+            <h2>892</h2>
+          </div>
+        </div>
+        <div className="homepagegrapharea">
+          <div>Activities</div>
+        </div>
+        <div className="homepagepichartrow">
+          <div className="piechartcontainer">cart area</div>
+          <div className="piechartcontainer">today schedule</div>
         </div>
         <Link to="/login">login</Link>
       </div>
