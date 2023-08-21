@@ -4,6 +4,8 @@ import { AiOutlineDoubleLeft } from "react-icons/ai";
 import Leftcontainer from "./homepageleftbox";
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Home() {
   const [sidebarstate, setsidebarstate] = useState(false);
 
@@ -82,6 +84,7 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <Link to="/login">login</Link>
       </div>
     </div>
   );
