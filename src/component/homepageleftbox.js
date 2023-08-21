@@ -3,7 +3,6 @@ import {
   AiOutlinePieChart,
   AiFillSchedule,
   AiOutlineTags,
-  AiOutlineDoubleLeft,
 } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { LuSettings } from "react-icons/lu";
