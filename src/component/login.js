@@ -45,6 +45,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+      <Link to="/">Home</Link>
     </div>
   );
 }
