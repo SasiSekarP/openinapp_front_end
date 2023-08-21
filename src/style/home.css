@@ -123,7 +123,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 0px;
-    column-gap: 1rem;
+    column-gap: 2rem;
     row-gap: 1rem;
     flex-wrap: wrap;
 }
