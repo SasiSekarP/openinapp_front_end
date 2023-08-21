@@ -3,6 +3,7 @@ import {
   AiOutlineDoubleLeft,
   AiOutlineTags,
   AiOutlineLike,
+  AiOutlineRight,
 } from "react-icons/ai";
 import { PiUsers } from "react-icons/pi";
 import { CiMoneyBill } from "react-icons/ci";
@@ -129,7 +130,24 @@ export default function Home() {
         </div>
         <div className="homepagepichartrow">
           <div className="piechartcontainer">cart area</div>
-          <div className="piechartcontainer">today schedule</div>
+          <div className="piechartcontainer schedulearea">
+            <div className="sheduleareatitleandseeallrow">
+              <h2 className="scheduleareatitle">Today's schedule</h2>
+              <div className="graytext scheduleareaseeall">
+                see all <AiOutlineRight />
+              </div>
+            </div>
+            <div className="homepageschedulebox homepagescheduleboxyellow">
+              <div>Meeting with suppliers from Kuta Bali</div>
+              <div className="graytext">14.00 - 15.00</div>
+              <div className="graytext">at Sunset Road, Kuta, Bali.</div>
+            </div>
+            <div className="homepageschedulebox homepagescheduleboxblue">
+              <div>Check operation at Giga Factory 1</div>
+              <div className="graytext">18.00 - 20.00</div>
+              <div className="graytext">at Central Jakarta</div>
+            </div>
+          </div>
         </div>
         <Link to="/login">login</Link>
       </div>
