@@ -1,0 +1,108 @@
+.loginscreenparentcontainer{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.loginscreenleftcontainer{
+    background-color: black;
+    width: 35%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 500;    
+}
+
+.loginscreenrightcontainer{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginscreenrightcontainersecondrow{
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.signinpotionbuttoncontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.loginformsigninbutton{
+    border: 0px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 47%;
+}
+
+.logincontainer{
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.loginpagelable{
+    font-weight: 700;
+}
+
+.loginpageinput{
+    background-color: rgb(233, 231, 231);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1rem;
+}
+
+.loginpageinput:focus{
+    outline: none;
+}
+
+.graytext{
+    color: gray;
+}
+
+.loginpagedonthaveaccountlink{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0px;
+}
+
+.loginpagesignbutton{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) {
+    .loginscreenleftcontainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .signinpotionbuttoncontainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 100%;
+    }
+
+    .loginformsigninbutton{
+        width: 100%;
+    }
+}

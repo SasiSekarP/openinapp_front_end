@@ -1,0 +1,221 @@
+.homepageparentcontainer{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(242, 242, 242);
+}
+
+.bigscreen{
+    display: flex;
+    width: 300px;
+}
+
+.smallscreen{
+    display: none;
+}
+
+.homepageleftcontainer{
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem 1rem 2rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepagelogoname{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.homepageleftboxlink{
+    color: white;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.homepageleftcontactuscontainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+
+.homepagerightboxhamburgericon{
+    display: none;
+}
+
+.homepagerighcontainer{
+    margin: 30px 30px 30px 15px;
+    flex: 1;
+}
+
+.homepageuserimage{
+    width: 30px;
+    border-radius: 15px;
+    overflow:hidden
+}
+
+.homepageheadtag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepagerightboxiconbox{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.homepagerightboxrightcontent{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.bellicon{
+    font-size: 30px;
+}
+
+.homepagerightboxsearchbutton,.homepagerightboxsearchtag{
+    border: 0px;
+    background-color: white;
+    padding: 10px;
+}
+
+.homepagerightboxsearchbutton{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.homepagerightboxsearchtag{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;   
+}
+
+.homepagesearchbarinputcontainerforsmallscreen{
+    display: none;
+}
+
+.homepagerightboxsearchtag:focus{
+    outline: none;
+}
+
+.smallscreeninputcontainer{
+    display: none;
+}
+
+.smallscreenheading{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    .smallscreenheading{
+        display: flex;
+    }
+
+    .smallscreeninputcontainer{
+        display: flex;
+    }
+
+    .bigscreenheading{
+        display: none;
+    }
+
+    .homepagerightboxrightcontent{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bigscreensearchtag{
+        display: none;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .homepagerightboxhamburgericon{
+        display: block;
+        border: 0px;
+        background-color: transparent;
+    }
+
+    .homepageleftboxhamburgericon2{
+        color: white;
+        background-color: transparent;
+        border: 0px;
+        height: fit-content;
+    }
+
+    .homepageleftboxclosebutton{
+        display: flex;
+        justify-content: flex-end;
+        transition: width 2s;
+    }
+
+    .bigscreen{
+        display: none;
+    }
+
+    .smallscreen{
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+    }
+
+    .smallscreenhide{
+        left: -250px;
+        transition: ease-in-out 0.5s;
+    }
+
+    .smallscreenshow{
+        left: 0px;
+        transition: ease-in-out 0.5s;
+    }
+
+    .homepageleftcontainer{
+        margin: 0px;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .homepagerightboxrightcontent{
+        display: flex;
+    }
+
+    .bigscreensearchtag{
+        flex: 1;
+    }
+
+    .homepagerightboxrightcontent{
+        width: 100%;
+        display: flex;
+    }
+    .homepageheadtag{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 10px 0px;
+    }
+
+    .homepagerightboxrightcontent,.homepagesearchbarinputcontainer{
+        width: 100%;
+        display: flex;
+    }
+
+    .homepagerightboxsearchtag{
+        flex: 1;
+    }
+}
