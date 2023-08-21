@@ -43,9 +43,10 @@ export default function Login() {
           <div className="graytext loginpagedonthaveaccountlink">
             Don't have an account? <Link to="*">Register here</Link>
           </div>
+
+          <Link to="/">Home</Link>
         </div>
       </div>
-      <Link to="/">Home</Link>
     </div>
   );
 }
