@@ -13,7 +13,20 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
+import Piechart from "./piechart";
+import Linechart from "./graph";
+
 export default function Home() {
+  const data = {
+    labels: ["Red", "Blue", "Yellow"],
+    datasets: [
+      {
+        data: [55, 31, 14],
+        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+      },
+    ],
+  };
   const [sidebarstate, setsidebarstate] = useState(false);
 
   return (
@@ -126,10 +139,14 @@ export default function Home() {
           </div>
         </div>
         <div className="homepagegrapharea">
-          <div>Activities</div>
+          <h2 className="scheduleareatitle">Activities</h2>
+          <Linechart />
         </div>
         <div className="homepagepichartrow">
-          <div className="piechartcontainer">cart area</div>
+          <div className="piechartcontainer schedulearea">
+            <h2 className="scheduleareatitle">Top products</h2>
+            <Piechart data={data} />
+          </div>
           <div className="piechartcontainer schedulearea">
             <div className="sheduleareatitleandseeallrow">
               <h2 className="scheduleareatitle">Today's schedule</h2>

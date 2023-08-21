@@ -170,7 +170,8 @@
     width: 100%;
     border-radius: 1rem;
     padding: 2rem;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .homepagepichartrow{
@@ -194,6 +195,10 @@
     min-width: 200px;
     display: flex;
     flex: 1;
+}
+
+.pie:focus{
+    outline: none;
 }
 
 .schedulearea{
