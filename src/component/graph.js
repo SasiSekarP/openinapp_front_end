@@ -6,70 +6,60 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const Linechart = () => {
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      name: "",
+      user: 100,
+      guest: 200,
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      name: "Week 1",
+      user: 410,
+      guest: 380,
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+      name: "Week 2",
+      user: 150,
+      guest: 210,
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      name: "Week 3",
+      user: 450,
+      guest: 300,
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+      name: "Week 4",
+      user: 190,
+      guest: 250,
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+      name: "Week 4",
+      user: 250,
+      guest: 450,
     },
   ];
 
   return (
-    <LineChart
-      data={data}
-      className="grapharea"
-      width={730}
-      height={250}
-      margin={{ top: 20, right: 0, left: 0, bottom: 0 }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-    </LineChart>
+    <ResponsiveContainer width={"100%"} height={250}>
+      <LineChart data={data} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
+        <CartesianGrid strokeDasharray="none" vertical={false} />
+        <XAxis dataKey="name" axisLine={false} />
+        <YAxis axisLine={false} />
+        <Tooltip />
+        <Legend
+          verticalAlign="top"
+          align="right"
+          iconType="circle"
+          height={40}
+        />
+        <Line type="monotone" dataKey="user" stroke="#8884d8" />
+        <Line type="monotone" dataKey="guest" stroke="#82ca9d" />
+      </LineChart>
+    </ResponsiveContainer>
   );
 };
 
