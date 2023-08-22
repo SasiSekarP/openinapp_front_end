@@ -2,7 +2,6 @@ import React, { PureComponent } from "react";
 import {
   LineChart,
   Line,
-  Text,
   XAxis,
   YAxis,
   CartesianGrid,
