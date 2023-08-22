@@ -1,6 +1,8 @@
+import React, { PureComponent } from "react";
 import {
   LineChart,
   Line,
+  Text,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -9,58 +11,85 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const Linechart = () => {
-  const data = [
-    {
-      name: "",
-      user: 100,
-      guest: 200,
-    },
-    {
-      name: "Week 1",
-      user: 410,
-      guest: 380,
-    },
-    {
-      name: "Week 2",
-      user: 150,
-      guest: 210,
-    },
-    {
-      name: "Week 3",
-      user: 450,
-      guest: 300,
-    },
-    {
-      name: "Week 4",
-      user: 190,
-      guest: 250,
-    },
-    {
-      name: "Week 4",
-      user: 250,
-      guest: 450,
-    },
-  ];
+const data = [
+  {
+    // "na me": "0",
+    user: 100,
+    guest: 200,
+    amt: 2400,
+  },
+  {
+    name: "Week 1",
+    user: 400,
+    guest: 300,
+    amt: 2400,
+  },
+  {
+    name: "Week 2",
+    user: 50,
+    guest: 148,
+    amt: 2210,
+  },
+  {
+    name: "Week 3",
+    user: 350,
+    guest: 300,
+    amt: 2290,
+  },
+  {
+    name: "Week 4",
+    user: 100,
+    guest: 208,
+    amt: 800,
+  },
+  {
+    name: "",
+    user: 189,
+    guest: 350,
+    amt: 281,
+  },
+];
+const yTicks = [0, 100, 200, 300, 400, 500];
 
-  return (
-    <ResponsiveContainer width={"100%"} height={250}>
-      <LineChart data={data} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
-        <CartesianGrid strokeDasharray="none" vertical={false} />
-        <XAxis dataKey="name" axisLine={false} />
-        <YAxis axisLine={false} />
-        <Tooltip />
-        <Legend
-          verticalAlign="top"
-          align="right"
-          iconType="circle"
-          height={40}
-        />
-        <Line type="monotone" dataKey="user" stroke="#8884d8" />
-        <Line type="monotone" dataKey="guest" stroke="#82ca9d" />
-      </LineChart>
-    </ResponsiveContainer>
-  );
-};
-
+class Linechart extends PureComponent {
+  render() {
+    return (
+      <div className="chart-container">
+        <ResponsiveContainer min-width={"100%"} height={250}>
+          <LineChart
+            height={250}
+            data={data}
+            margin={{ top: 5, right: 0, left: 0, bottom: 5 }}
+            padding={{ left: 20, right: 20 }}
+          >
+            <CartesianGrid strokeDasharray="none" vertical={false} />
+            <XAxis dataKey="name" axisLine={false} />
+            <YAxis ticks={yTicks} domain={[0, 500]} axisLine={false} />
+            <Tooltip />
+            <Legend
+              verticalAlign="top"
+              align="right"
+              iconType="circle"
+              height={40}
+            />
+            <Line
+              type="monotone"
+              dataKey="guest"
+              stroke="#E9A0A0"
+              strokeWidth={3}
+              dot={false}
+            />
+            <Line
+              type="monotone"
+              dataKey="user"
+              stroke="#9BDD7C"
+              strokeWidth={3}
+              dot={false}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    );
+  }
+}
 export default Linechart;

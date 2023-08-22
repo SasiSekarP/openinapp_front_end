@@ -144,8 +144,11 @@ export default function Home() {
         </div>
         <div className="homepagepichartrow">
           <div className="piechartcontainer schedulearea">
-            <h2 className="scheduleareatitle">Top products</h2>
-            <Piechart data={data} />
+            <h2 className="scheduleareatitle piecharttitle">Top products</h2>
+            <div className="piechartrow" width={100} hight={100}>
+              <Piechart data={data} />
+              <div>h</div>
+            </div>
           </div>
           <div className="piechartcontainer schedulearea">
             <div className="sheduleareatitleandseeallrow">
