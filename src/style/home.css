@@ -360,6 +360,7 @@
         color: white;
         background-color: black;
         padding: 1rem;
+        z-index: 1;
     }
 
     .smallscreenhide{
