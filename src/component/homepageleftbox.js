@@ -12,12 +12,12 @@ const Leftcontainer = () => {
     <div className="homepageleftcontainer">
       <div className="homepagelogoname">Board.</div>
       <div className="homepagelinkcontainer">
-        <Link to="*" className="homepageleftboxlink">
-          <AiOutlinePieChart />{" "}
+        <Link to="/" className="homepageleftboxlink">
+          <AiOutlinePieChart />
           <div className="homepageleftboxlinklable">Dashboard</div>
         </Link>
         <Link to="*" className="homepageleftboxlink">
-          <AiOutlineTags />{" "}
+          <AiOutlineTags />
           <div className="homepageleftboxlinklable">Transactions</div>
         </Link>
         <Link to="*" className="homepageleftboxlink">

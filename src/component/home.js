@@ -144,10 +144,38 @@ export default function Home() {
         </div>
         <div className="homepagepichartrow">
           <div className="piechartcontainer schedulearea">
-            <h2 className="scheduleareatitle piecharttitle">Top products</h2>
+            <div className="piechartheadingarea">
+              <h2 className="scheduleareatitle piecharttitle">Top products</h2>
+              <div className="graytext">May - June 2021</div>
+            </div>
             <div className="piechartrow" width={100} hight={100}>
               <Piechart data={data} />
-              <div>h</div>
+              <div className="legentarea">
+                <div className="piechartlegendrow">
+                  <div
+                    className="legentcolorcircle"
+                    style={{ backgroundColor: "#0088FE" }}
+                  ></div>
+                  <h3>Basic Tees</h3>
+                </div>
+                <div className="graytext">55%</div>
+                <div className="piechartlegendrow">
+                  <div
+                    className="legentcolorcircle"
+                    style={{ backgroundColor: "#00C49F" }}
+                  ></div>
+                  <h3>Custom Sort Pants</h3>
+                </div>
+                <div className="graytext">31%</div>
+                <div className="piechartlegendrow">
+                  <div
+                    className="legentcolorcircle"
+                    style={{ backgroundColor: "#FFBB28" }}
+                  ></div>
+                  <h3>Super Hoodies</h3>
+                </div>
+                <div className="graytext">14%</div>
+              </div>
             </div>
           </div>
           <div className="piechartcontainer schedulearea">

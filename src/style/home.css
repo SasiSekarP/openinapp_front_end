@@ -240,7 +240,44 @@
     column-gap: 5px;
 }
 
-/* vickey code start */
+.legentcolorcircle{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.piechartlegendrow{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.legentarea{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.piechartheadingarea{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 426px) {
+    .piechartheadingarea{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .piechartrow{
+        flex-direction: column;
+    }
+}
+
+/* library code start */
 /* Apply styles for the chart container */
 .chart-container {
     width: 100%;
