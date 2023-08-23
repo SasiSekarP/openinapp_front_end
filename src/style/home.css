@@ -80,6 +80,8 @@
     display: flex;
     column-gap: 1rem;
     align-items: center;
+    background-color: #F5F5F5;
+
 }
 
 .bellicon{
@@ -139,19 +141,23 @@
 }
 
 .aliceblue{
-    background-color: rgb(211, 218, 224);
+    background-color: #DDEFE0;
+;
 }
 
 .antiquewhite{
-    background-color: rgb(236, 224, 209);
+    background-color: #F4ECDD;
+
 }
 
 .aqua{
-    background-color: aqua;
+    background-color: #EFDADA;
+
 }
 
 .gray{
-    background-color: rgb(194, 190, 190);
+    background-color: #DEE0EF;
+
 }
 
 .homepagefourcontainericontag{
